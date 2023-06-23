@@ -1,47 +1,58 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link rel="stylesheet"  href="style1.css"></head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap-4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    
+    <title>Document</title>
+    <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url("image/library.jpg");
+
+
+  }
+  </style>
+</head>
 
 <body>
+    <?php include 'navbar1.php';?>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col 12 col-sm-8 col-md-6 m-auto ">
+                <div class="card" style="margin-top:50px;">
+                    <div class="card-title offset-sm-5 mt-2">
+                        <h3>Register</h3>
+                    </div>
 
+                    <div class="card-body">
+                        <form action="adminregisterlink.php" method="post" id="login">
 
-	
-<div class="login-area">
-<div class="container">
-<div class="login-box ptb--100">
-<form name="login" method="post" action="adminregisterlink.php">
-<div class="form-group col-md-12">
-<center><h2 style="color:blue">Registration</h2></center>
-</div>
-<div class="form-group col-md-12">
-Id :<input type="text" class="form-control" name="id"  placeholder="id" required>
-</div>
-<div class="form-group col-md-12">
-First name:<input type="text" class="form-control" name="firstname" placeholder="First Name" >
-</div>
-<div class="form-group col-md-12">
-Last Name :<input type="text" class="form-control" name="lastname" placeholder="Last Name" >
-</div>
-<div class="form-group col-md-12">
-Email:<input type="email" class="form-control" name="email" placeholder="email" >
-</div>
-
-<div class="form-group col-md-12">
-password:<input type="password" class="form-control" name="password" placeholder="password" >
-</div>
-
-
-
-<div class="form-group col-md-12">
- 
-
-<button type="submit" class="form-control" value ="Register">register</button>
-<button type="reset" class="form-control" value ="Reset" >Reset</button>
-</div>
-</form>
-</div>
-</div>
-</div>
+                  <input type="text" class="form-control my-4 py-2" name="id"  placeholder="id" required>
+                           
+                        <input type="text" class="form-control my-4 py-2" name="firstname" placeholder="First Name" >
+                        <input type="text" class="form-control my-4 py-2" name="lastname" placeholder="Last Name" >
+                        <input type="email" class="form-control my-4 py-2" name="email" placeholder="email" >
+                        <input type="password" class="form-control my-4 py-2" name="pass" max=6    placeholder="password" required>
+                            <div class="text-center mt-3 col-sm-3">
+                            <button type="submit" class="form-control btn btn-primary" value ="Register">register</button>
+                             
+                            </div>
+                           
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 </html>
 
+
+
+<?php include 'footer.php';?>
